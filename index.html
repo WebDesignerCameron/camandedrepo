@@ -1,27 +1,164 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            <title>Cam and Ed GD</title>
-            <style>
-                div#maintitle{color:white;background:blue;width:360px;padding:5px;margin:auto;
-                }
-                body{font-family:"Comic Sans MS";
-                }
-                h2{color: blue;
-                }
-            </style>
-        </head>
-        <body>
-            <div id="maintitle"><h1>Cam and Ed GD</h1></div>
-            <h2>Our Usernames on GD</h2>
-            <p>Cam: floofloofm184</p><br>
-            <p>Ed: gameboyed</p>
-            <hr>
-            <p>Check out our levels! By the way, Cam(me) made the the website.</p>
-            <hr>
-            <h2>Links</h2>
-            <a href="https://github.com/WebDesignerCameron/camandedrepo.git">Page Info</a>
-            <hr>
-            <p><sup>Created by</sup> Web Designer Cameron</p>
-        </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+        <link href="https://fonts.cdnfonts.com/css/pusab" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WebDesignerCameron/src@main/templates/css/layout/semantic/section/hero/glowing.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250">
+                <!-- Special Effects -->
+                <defs>
+                    <linearGradient id="textGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#55ff55" />
+                        <stop offset="50%" stop-color="#00cc00" />
+                        <stop offset="100%" stop-color="#007700" />
+                    </linearGradient>
+                    <linearGradient id="blockGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#dddddd" />
+                        <stop offset="50%" stop-color="#555555" />
+                        <stop offset="100%" stop-color="#000000" />
+                    </linearGradient>
+                </defs>
+                <!-- CSS -->
+                <style>
+                    .main-text {
+                        fill: url(#textGradient);
+                        dominant-baseline: middle;
+                        text-anchor: middle;
+                        font-weight: 800;
+                        font-family: 'Pusab', sans-serif;
+                        letter-spacing: 2px;
+                        font-size: 72px;
+                        stroke: #ffffff;
+                        stroke-width: 6px;
+                        paint-order: stroke fill;
+                        stroke-linejoin: round;
+                    }
+                    .orb {
+                        fill: #ffff00;
+                        stroke: #ffffff;
+                        stroke-width: 12px;
+                        paint-order: stroke fill;
+                        stroke-linejoin: round;
+                    }
+                    .orb-effect {
+                        fill: #ffffff;
+                    }
+                    .block, .spike {
+                        fill: url(#blockGradient);
+                        stroke: #ffffff;
+                        stroke-width: 12px;
+                        paint-order: stroke fill;
+                        stroke-linejoin: round;
+                    }
+                </style>
+                <!-- Background -->
+                <rect width="100%" height="100%" rx="0" fill="#0b0b0b"></rect>
+                <!-- Orb -->
+                <circle cx="100" cy="200" r="30" class="orb" />
+                <polygon class="orb-effect" points="90,190 90,195 95,195 95,190 90,190" />
+                <polygon class="orb-effect" points="110,210 110,215 115,215 115,210 110,210" />
+                <!-- Block -->
+                <polygon class="block" points="750,240 790,200 750,160 710,200 750,240" />
+                <!-- Spike -->
+                <polygon class="spike" points="400,10 400,75 357,60 400,10" />
+                <!-- Text -->
+                <text x="400" y="125" class="main-text">
+                    Cam and Ed GD
+                </text>
+            </svg>
+            <br>
+            <nav class="flex-nav">
+                <a href="#intro">
+                    Introduction
+                </a>
+                <a href="#levels">
+                    Levels
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="intro">
+                <h2>Introduction</h2>
+                <p>This is Cam and Ed GD, a
+                website about 2 Geometry Dash
+                Creators with big ideas and big
+                capabilities.</p>
+                <br>
+                <p><sub>The creator of this website
+                is Cam, a.k.a. WebDesignerCameron
+                </sub></p>
+            </section>
+            <br>
+            <section style="text-align: center;" id="levels">
+                <h2>Levels</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Rainbow Challenge</h3>
+                        <h4>Created by</h4>
+                        <p>Ed</p>
+                        <h4>State</h4>
+                        <p>Released</p>
+                        <h4>Description</h4>
+                        <p>Challenge yourself by
+                        running through this
+                        colourful mix of rainbows
+                        and parkour!</p>
+                    </article>
+                    <article class="card">
+                        <h3>Confusion</h3>
+                        <h4>Created by</h4>
+                        <p>Cam and Ed</p>
+                        <h4>State</h4>
+                        <p>Development</p>
+                        <h4>Summary</h4>
+                        <p>Skip through this
+                        bewildering plateau of
+                        multi-layered madness!</p>
+                    </article>
+                    <article class="card">
+                        <h3>
+                            Platformer Practice
+                            1 and 2
+                        </h3>
+                        <h4>Created by</h4>
+                        <p>Cam</p>
+                        <h4>State</h4>
+                        <p>Released</p>
+                        <h4>Summary</h4>
+                        <p>A carefully calibrated
+                        jumping duo to tone your
+                        skills!</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://github.com/WebDesignerCameron" id="wdc">
+                2026 WebDesignerCameron
+            </a>
+            <br>
+            <br>
+            <nav class="flex-nav">
+                <a href="https://webdesignercameron.github.io/WDC">
+                    Main
+                </a>
+                <a href="https://webdesignercameron.github.io/WebDesignerCameronSites">
+                    Sites
+                </a>
+                <a href="https://webdesignercameron.github.io/WebDesignerCameronProjects">
+                    Projects
+                </a>
+                <a href="https://webdesignercameron.github.io/WebDesignerCameronCode">
+                    Code
+                </a>
+                <a href="https://webdesignercameron.github.io/WebDesignerCameronAsk">
+                    Ask
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

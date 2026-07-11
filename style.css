@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pusab', sans-serif;
+}
+header {
+    margin-bottom: 3ex;
+    background: black;
+    padding-bottom: 10px;
+}
+header svg {
+    margin-bottom: 15px;
+}
+.flex-nav {
+    display: flex;
+}
+.flex-nav a {
+    flex: auto;
+    color: grey;
+    text-decoration: none;
+}
+.hero {
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-weight: 300;
+}
+.hero h2 {
+    margin-bottom: 25px;
+}
+#levels h2 {
+    color: blue;
+}
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    min-width: 320px;
+    max-width: 400px;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 15px;
+    flex: auto;
+}
+.card h3 {
+    color: #5555ff;
+    margin-bottom: 10px;
+}
+.card h4 {
+    color: #0000ff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer {
+    font-family: 'Consolas';
+    background: black;
+    color: white;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+#wdc {
+    color: grey;
+    text-decoration: none;
+}
